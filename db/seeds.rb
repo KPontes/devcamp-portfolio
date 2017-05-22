@@ -46,3 +46,10 @@ puts "5 skills created"
     )
   end
   puts "1 portfolio items created"
+  
+  3.times do |technology|
+    #different way of creating a child item
+    Portfolio.last.technologies.create!(name: "Technology #{technology}")
+  end
+  puts "3 technologies created"
+  

@@ -59,3 +59,7 @@ gem 'devise', '~> 4.3'
 
 # Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
+
+gem 'devcamp_view_tool', git: 'https://github.com/KPontes/devcamp_view_tool'
+
+

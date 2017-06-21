@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -16,15 +17,7 @@
   <body>
     <!--start Nav-->
     <%= render '/shared/blog_nav' %>
-
-    <!--start Header-->
-    <div class="blog-header">
-      <div class="container">
-        <h1 class="blog-title">My Blog</h1>
-        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
-        <%= link_to 'Write a new Blog', new_blog_path if logged_in?(:site_admin) %>
-      </div>
-    </div>
+    <%= render '/shared/blog_masthead' %>
     
     <!--start container and rows-->    
     <div class="container">
@@ -33,14 +26,7 @@
         <%= render 'shared/blog_sidebar' %>
       </div>
       
-      <!-- start footer -->
-      <footer class="blog-footer">
-        <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        <p>
-          <a href="#">Back to top</a>
-        </p>
-      </footer>
-      <!-- end footer -->
+      <%= render '/shared/blog_footer' %>
       
       <%= source_helper("blog") %>
     </div>

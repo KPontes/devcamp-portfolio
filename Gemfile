@@ -74,3 +74,16 @@ gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
 #jquery
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+#Carrierwave
+gem 'carrierwave', '~> 1.1'
+
+#Mini_magick
+gem 'mini_magick', '~> 4.8'
+
+#Carrierwave_aws
+gem 'carrierwave-aws', '~> 1.1'
+
+#Dotenv-rails
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+

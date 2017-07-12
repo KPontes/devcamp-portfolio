@@ -18,3 +18,4 @@
 
 # I don't want to show my secrets
 /code/devcampTutorials/DevcampPortfolio/config/secrets.yml
+.env

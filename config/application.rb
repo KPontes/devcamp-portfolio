@@ -24,6 +24,7 @@ module DevcampPortfolio
     # -- all .rb files in that directory are automatically loaded.
     
     # config.action_controller.permit_all_parameters = true
+    
     config.eager_load_paths << "#{Rails.root}/lib"
   end
 end

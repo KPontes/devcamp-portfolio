@@ -81,3 +81,5 @@ gem 'twitter', '~> 6.1'
 
 #gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'redis', '~> 4.0'
+
+ruby "2.4.0"

@@ -1,5 +1,20 @@
 <div class="inner cover">
   <h1 class="cover-heading">Tech News</h1>
+  <br><br>
+  <%= form_tag(tech_news_path, method: :get ) do %>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <%= text_field_tag '_search', nil, placeholder: 'Enter search term', class:'form-control' %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <%= submit_tag 'Search Twitter', class:'btn btn-primary btn-block'%>
+        </div>
+      </div>
+    </div>
+  <% end %>
   <div class="row">
     <% @tweets.each do |tweet| %>
       <div class="col-md-6">

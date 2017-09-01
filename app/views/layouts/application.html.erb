@@ -13,20 +13,23 @@
   </head>
 
   <body>
-    <div class="site-wrapper">
+    <div class="site-wrapper background_image">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
-          <%= video_tag(
+          <% if (notice != nil) or (alert != nil) then %>
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+          <% end %>
+
+          <!--  video_tag(
               'HardDrivePhotojpeg.mp4',
               id: 'background',
               autoplay: true,
               loop: true,
               muted: true,
               poster: 'home-bg.png'
-            )
-            %>
+            )-->
+            
           <%= render "shared/application_nav" %>
 
           <%= yield %>

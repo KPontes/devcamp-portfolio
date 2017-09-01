@@ -11,7 +11,10 @@ class PagesController < ApplicationController
   end
 
   def tech_news
-    @tweets = SocialTool.twitter_search
+    @tweets = SocialTool.twitter_search params[:_search]
   end
   
+  def page_params
+    params.require(:page).permit(:_search)  
+  end
 end

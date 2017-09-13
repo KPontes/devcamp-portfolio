@@ -1,5 +1,6 @@
-<div class="form-group nested-fields">
-  <%= f.label :name %>
-  <%= f.text_field :name, class:'form-control' %>
-  <%= link_to_remove_association 'Remove technology', f %>
+<% divid = "input-tech"+ inc.to_s %>
+<div id=<%=divid%> class="form-group nested-fields">
+  <%= f.text_field :name, class:'form-control', Placeholder: 'Name', fieldid: inc.to_s %>
+  <button type="button" id="removetech<%=inc.to_s%>" class="btn btn-default" fieldid=<%=inc.to_s%>>Remove Technology</button>
+  <!-- link_to_remove_association 'Remove technology', f -->
 </div>

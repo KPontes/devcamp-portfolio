@@ -38,23 +38,16 @@
   <div class="col-md-6">
     <h3> Tecnologies used</h3>
     <div>
-      <% i=0 %>
       <%= f.fields_for :technologies do |technology_form| %>
-        <div class="hide" id="new_tech_form">
-          <%= render partial: 'technology_fields', :locals => {:inc => i, f: technology_form}%>
-          <% i+=1 %>
-        </div>
+          <%= render 'technology_fields', f: technology_form %>
       <% end %>
-
-      <button type="button" id="addtech" class="btn btn-default">Add Technology</button>
-
+      
       <div>
-        <!-- link_to_add_association 'Add technology', f, :technologies -->
+        <%= link_to_add_association 'Add technology', f, :technologies %>
       </div>
     </div>
   
     <div class="form-group">
-      <br>
       <%= f.submit 'Save portfolio item', class:'btn btn-primary btn-block'%>
     </div>
   </div>

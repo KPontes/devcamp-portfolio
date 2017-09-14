@@ -83,3 +83,7 @@ gem 'twitter', '~> 6.1'
 gem 'redis', '~> 4.0'
 
 ruby "2.4.0"
+
+group :production, :staging do
+    gem 'rails_12factor', '~> 0.0.3'
+end

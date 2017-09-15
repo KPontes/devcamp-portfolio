@@ -1,7 +1,7 @@
 /*global $*/
-$(document).ready(function(){
-    $('#removetech0').bind("click", rmtech);
-    $('#removetech1').bind("click", rmtech);
+
+$(document).on('turbolinks:load', function(){
+    $('.removetech').bind("click", rmtech);
     //$('#removetech0, #removetech1').on('click', rmtech());
     $('#addtech').click(function(){
       //$(this).before($("#new_tech_form").html());

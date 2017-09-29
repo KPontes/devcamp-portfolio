@@ -13,7 +13,7 @@ module SocialTool
       _search = "#"+_search
     end
     
-    client.search(_search, result_type: 'recent').take(6).collect do |tweet|
+    client.search(_search, result_type: 'recent').take(12).collect do |tweet|
       "#{tweet.user.screen_name}: #{tweet.text}"
     end
   end
